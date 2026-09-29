@@ -9,7 +9,6 @@ on:
       - main
 
 jobs:
-
   build:
     name: Build and Test
     runs-on: ubuntu-latest
@@ -17,6 +16,8 @@ jobs:
     steps:
       - name: Checkout source code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup JDK 17
         uses: actions/setup-java@v4
@@ -33,7 +34,7 @@ jobs:
 
       - name: Package application
         run: mvn -B package
-        
+
       - name: Run Trivy Vulnerability Scanner (FS)
         uses: aquasecurity/trivy-action@master
         with:
