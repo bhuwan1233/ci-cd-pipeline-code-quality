@@ -147,15 +147,17 @@ jobs:
           scanMetadataReportFile: target/sonar/report-task.txt
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-🖼️ Pipeline Execution Proof & Screenshots
+## 🖼️ Pipeline Execution Proof & Screenshots
 
-GitHub Actions Successful Workflow Execution
+### GitHub Actions Successful Workflow Execution
 
-![GitHub Actions Successful Run](images/Screenshot%202026-09-29%20135440.png)
+<img src="images/github-actions.png" alt="GitHub Actions Successful Run" width="100%" />
 
-SonarCloud Analysis & Quality Gate Result
+<br />
 
-![SonarCloud Dashboard Passed](images/Screenshot%202026-09-29%20135547.png)
+### SonarCloud Analysis & Quality Gate Result
+
+<img src="images/sonarcloud.png" alt="SonarCloud Dashboard Passed" width="100%" />
 
 
 
