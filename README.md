@@ -148,13 +148,14 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 🖼️ Pipeline Execution Proof & Screenshots
+
 GitHub Actions Successful Workflow Execution
-<img width="1271" height="666" alt="Screenshot 2026-09-29 135440" src="https://github.com/user-attachments/assets/c841e182-6f0e-4165-92a9-eba7e062108e" />
 
-
+![GitHub Actions Successful Run](images/Screenshot%202026-09-29%20135440.png)
 
 SonarCloud Analysis & Quality Gate Result
-<img width="1366" height="669" alt="Screenshot 2026-09-29 135547" src="https://github.com/user-attachments/assets/0eb10c0c-7a61-4704-8a20-2e84e3f4a175" />
+
+![SonarCloud Dashboard Passed](images/Screenshot%202026-09-29%20135547.png)
 
 
 
