@@ -140,7 +140,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=bhuwan1233_ci-cd-pipeline-code-quality -Dsonar.organization=bhuwan1233 -Dsonar.host.url=[https://sonarcloud.io](https://sonarcloud.io)
 
-      - name: SonarQube Quality Gate Check
+- name: SonarQube Quality Gate Check
         uses: sonarsource/sonarqube-quality-gate-action@master
         timeout-minutes: 5
         with:
