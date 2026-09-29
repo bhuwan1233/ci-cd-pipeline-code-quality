@@ -48,6 +48,18 @@ An automated Continuous Integration (CI) pipeline built with **GitHub Actions**,
    8. Quality Gate Verification
 
 
+## 🖼️ Pipeline Execution Proof & Screenshots
+
+### GitHub Actions Successful Workflow Execution
+
+<img src="images/github-actions.png" alt="GitHub Actions Successful Run" width="100%" />
+
+<br />
+
+### SonarCloud Analysis & Quality Gate Result
+
+<img src="images/sonarcloud.png" alt="SonarCloud Dashboard Passed" width="100%" />
+
 
 
 Step 1 — Local Project Setup
@@ -147,17 +159,6 @@ jobs:
           scanMetadataReportFile: target/sonar/report-task.txt
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-## 🖼️ Pipeline Execution Proof & Screenshots
-
-### GitHub Actions Successful Workflow Execution
-
-<img src="images/github-actions.png" alt="GitHub Actions Successful Run" width="100%" />
-
-<br />
-
-### SonarCloud Analysis & Quality Gate Result
-
-<img src="images/sonarcloud.png" alt="SonarCloud Dashboard Passed" width="100%" />
 
 
 
