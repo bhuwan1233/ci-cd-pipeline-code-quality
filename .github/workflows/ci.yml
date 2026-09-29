@@ -41,3 +41,9 @@ jobs:
           ignore-unfixed: true
           format: 'table'
           severity: 'CRITICAL,HIGH'
+
+      - name: SonarQube / SonarCloud Scan
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: mvn -B verify sonar:sonar -Dsonar.projectKey=bhuwan1233_ci-cd-pipeline-code-quality -Dsonar.organization=bhuwan1233 -Dsonar.host.url=https://sonarcloud.io
